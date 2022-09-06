@@ -17,12 +17,12 @@ nav ul {
     width: 60%;
     display: flex;
     align-items: center;
+    list-style-type: none;
     justify-content: space-evenly;
 }
-nav ul li {
+nav ul li a {
     color: teal;
     font-size: 1.2em;
-    list-style-type: none;
     text-decoration: none;
 }
 #home{
@@ -107,12 +107,25 @@ h6{
 	to{width: 100%;}
 	
 }
+#code{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#code h2 {
+    padding: 3%;
+}
 .code{
     width: 50%;
-    height: 25%;
-    align-self: center;
+    height: 80%;
+    display: flex;
+    font-size: 1.2em;
+    margin-bottom: 3%;
+    align-items: center;
     border-radius: 10px;
     border: 1px solid black;
+    justify-content: flex-start;
 }
 footer{
     height: 10%;
