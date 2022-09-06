@@ -1,5 +1,3 @@
-[ RSSCHOOL-CV ](https//:github.com/ismoilkhon/rsschool-cv )
-
 # Ismoilkhon Bakhromov
 ## Contacts:
 **Loation:** Tashkent, Uzbekistan  
