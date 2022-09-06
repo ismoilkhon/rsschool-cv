@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #efefef;
+}
+header nav {
+    height: 10%;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+nav ul li a {
+    color: teal;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+#home{
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+#home h2{
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+#home h4 {
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+#home ul li {
+    font-size: 1.2em;
+    padding: 10px 0px;
+    list-style-type: none;
+}
+#home img {
+    width: 40%;
+    margin: 5%;
+    height: 70%;
+    border-radius: 10px;
+    border: 2px solid gray;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#about{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#about p{
+    max-width: 60%;
+    font-size: 1.4em;
+}
+#about h2{
+    font-size: 2em;
+}
+h6{
+    font-size: 1.2em;
+}
+
+.skills{
+    width: 80%;
+    margin-left: 10%;
+}
+.skills  h2{
+	margin-top: 5%;
+    font-size: 2em;
+	text-align: center;
+}
+.skills:hover .progres{
+	animation: barAnim 4s;
+}
+.skill{
+    margin: 10px 30px;
+}
+.progresBorder{
+    padding: 5px;
+    border-radius: 15px;
+	background-color: rgb(232, 232, 232);
+    border: 1px solid rgb(238, 238, 238);
+}
+.progres{
+    height: 16px;
+    border-radius: 10px;
+    background: rgb(232, 232, 232);
+}
+.progresBar{
+    height: 16px;
+    align-self: center;
+    border-radius: 8px;
+    vertical-align: middle;
+    background: linear-gradient(90deg, rgb(118, 109, 255) 0%, rgb(136, 243, 255) 100%);
+}
+@keyframes barAnim {
+	from{width: 0%;}
+	to{width: 100%;}
+	
+}
+#code{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#code h2 {
+    padding: 3%;
+}
+.code{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    font-size: 1.2em;
+    margin-bottom: 3%;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid black;
+    justify-content: flex-start;
+}
+footer{
+    height: 10%;
+    display: flex;
+    padding-bottom: 10px;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: #cbcbcb;
+
+}
