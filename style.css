@@ -107,6 +107,21 @@ h6{
 	to{width: 100%;}
 	
 }
+#a100{
+    width: 100%;
+}
+#a90{
+    width: 90%;
+}
+#a80{
+    width: 80%;
+}
+#a75{
+    width: 75%;
+}
+#a30{
+    width: 30%;
+}
 #code{
     height: 50%;
     display: flex;
