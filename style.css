@@ -107,6 +107,21 @@ h6{
 	to{width: 100%;}
 	
 }
+#a100{
+    width: 100%;
+}
+#a90 #ab90{
+    width: 90%;
+}
+#a80  #ab80{
+    width: 80%;
+}
+#a75 #ab75{
+    width: 75%;
+}
+#a30{
+    width: 30%;
+}
 #code{
     height: 50%;
     display: flex;
@@ -135,4 +150,15 @@ footer{
     justify-content: center;
     background-color: #cbcbcb;
 
+}
+.test{
+    width: 100%;
+    display: grid;
+    grid-column: 3 / span 2;
+}
+.round{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: aquamarine;
 }
