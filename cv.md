@@ -28,3 +28,34 @@ My full name is Ismoilkhon Bakhromov, and I was born in 1998. I studied at Infor
 
 ---------
 
+## Code example:
+```jsx
+import React, { useState } from "react";
+
+export function Counter() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
+      <h1>Counter: {count}</h1>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+      <button onClick={() => setCount(count - 1)}>Decrement</button>
+      <button onClick={() => setCount(0)}>Reset</button>
+    </div>
+  );
+}
+```
+---------
+
+## Education: 
+
+**Tashkent University of Information Technologies**    
+**Faculty of computer engineering**  
+2019 - 2024  
+
+---------
+
+## Languages:
+
+**Uzbek:** Native   
+**English:** B2 
