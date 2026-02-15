@@ -56,21 +56,23 @@
 
             <section id="code-example">
                 <h2>Code Example</h2>
-                <p>A simple React component demonstrating state management:</p>
-                <pre><code>import React, { useState } from 'react';
-
-const Counter = () => {
-  const [count, setCount] = useState(0);
-
-  return (
-    &lt;div&gt;
-      &lt;p&gt;Count: {count}&lt;/p&gt;
-      &lt;button onClick={() => setCount(count + 1)}&gt;Increment&lt;/button&gt;
-    &lt;/div&gt;
-  );
-};
-
-export default Counter;</code></pre>
+                <p>Reusable memoisation:</p>
+                <pre><code>
+  function memo(fn) {
+  const cache = new Map()
+  return (arg) => {
+    const key = arg === undefined ? '__undefined__' : 
+                typeof arg === 'object' ? JSON.stringify(arg) : arg;
+    if (cache.has(key)) {
+      return cache.get(key);
+    }
+    
+    const result = fn(arg);
+    cache.set(key, result);
+    return result;
+  }
+}
+                </code></pre>
             </section>
 
             <section id="projects">
@@ -92,7 +94,7 @@ export default Counter;</code></pre>
 
         <footer>
             <a href="https://github.com/ismoilkhon" target="_blank">GitHub Profile</a> | 
-            2025 | 
+            2026 | 
             <a href="https://rs.school/" target="_blank"><img src="https://raw.githubusercontent.com/rolling-scopes-school/qualifying-stage/213ac1409f387d0f3006daaed5613cb5885000cf/tasks/cv/images/rs-school-logo.svg" alt="RS School Logo" width="50" style="vertical-align: middle;"></a> | 
             <a href="https://rs.school/courses/short-track" target="_blank">JS/Front-end Short Track Course</a>
         </footer>
